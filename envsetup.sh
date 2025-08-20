@@ -510,6 +510,9 @@ function lunch()
         cd - > /dev/null
     fi
 
+    # Generate build-manifest.xml after roomservice finishes
+    vendor/lineage/build/tools/gen_build-manifest.sh
+
     _lunch_meat $product $release $variant
 }
 
